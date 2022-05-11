@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1><b>Belly Button Biodiversity Dashboard</b></h1>
+        <p class="strokeme">Use the interactive charts below to explore the dataset.<br>Switch between subjects by selecting the subject ID number in the gold drop-down box.</br></p>
+      </div>
+    </div>
+    <div class="row" id="background">
+      <div class="col-md-12">
+
+        <h3><b>Background</b></h3>
+        <p class="flavour">Belly Buttons of 661 Test subjects were swabbed to characterize each subject's belly button microbiome. Bacterial DNA is extracted from the samples and 16S ribosomal RNA gene is PCR amplified. Then the resulting amplicons were sequenced using NGS and taxonomy is assigned based on sequence similarity of 97%, resulting in Operational Taxonomic Units (OTU). The resulting sequences were tallied for the relative abundance of Bacterial species within the sample.</p>
+        <a href="https://resources.qiagenbioinformatics.com/tutorials/OTU_Clustering_Steps.pdf"><b>Learn more on OTU Clustering!</b></a>
+ 
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md-2">
+        <div class="well">
+          <h5><b>Select Subject ID No.</b></h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title"><b>Demographic Info</b></h4>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
+</body>
+
+</html>

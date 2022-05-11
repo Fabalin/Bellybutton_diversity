@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(1, 71, 88);
+    font-family: 'Arial';
+}
+
+.jumbotron{
+    background-image:url("https://images.ctfassets.net/cnu0m8re1exe/4uoqT6ISsKmlfHZDrXL5u0/597104b75b301cf07ba9a653304024b7/bacteria.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; 
+    -moz-background-size: cover;
+}
+
+h1 {
+    -webkit-text-fill-color: rgb(248, 182, 0);
+    -webkit-text-stroke:2px rgb(0, 0, 0);
+}
+
+p.strokeme {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+#background{
+    border-radius: 25px;
+    background: #8bce33;
+    padding: 10px;
+    width: 1175px;
+    height: 180px;
+    border-radius: 15px 50px
+}
+
+h3{
+    color:black
+}
+
+p.flavour{
+    color:black
+}
+
+.well {
+    background-color: rgb(248, 182, 0);
+    text-align: center;
+}
+
+.panel-heading {
+    background-color:rgb(248, 182, 0) !important; 
+}
+
+h4.panel-title {
+    color:black;
+    text-align: center;
+}
+
+.panel-body {
+    text-align: center;
+}
